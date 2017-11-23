@@ -5,22 +5,14 @@ require "lolruby/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "lolruby"
-  spec.version       = Lolruby::VERSION
+  spec.version       = Lol::VERSION
   spec.authors       = ["shotat"]
   spec.email         = ["shotat@users.noreply.github.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
+  spec.description   = %q{Write a longer description or delete this line.}
+  spec.homepage      = "https://github.com/shotat/lolruby"
+  spec.extensions    = %w[ext/lolruby/extconf.rb]
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
