@@ -1,8 +1,10 @@
 # Lolruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lolruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+[lolgopher](https://github.com/kris-nova/lolgopher) for Ruby.
 
-TODO: Delete this and the text above, and describe your gem
+NOTE: Go environment is required because this gem depends on golang extensions.
+
+![img](./img/1.png)
 
 ## Installation
 
@@ -22,7 +24,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'lolruby'
+
+lorem = <<EOL
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled
+  it to make a type specimen book.
+  It has survived not only five centuries,
+  but also the leap into electronic typesetting,
+  remaining essentially unchanged.
+  It was popularised in the 1960s with the release of Letraset sheets
+  containing Lorem Ipsum passages,
+  and more recently with desktop publishing software
+  like Aldus PageMaker including versions of Lorem Ipsum.
+EOL
+
+Lol.puts lorem
+```
 
 ## Development
 
